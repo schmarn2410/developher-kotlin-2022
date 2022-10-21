@@ -1,7 +1,13 @@
 fun main() {
     println("Please Enter your name!")
-    val hi: String = readln()
-    println("Hello $hi!")
+    val name: String = readln()
+    println("Hello $name!")
+    println("How old are you?")
+    val potentialAge = readln()
+    val age = getAge(potentialAge)
+    println("Which gender do you identify as?")
+    val gender: String = readln()
+
     println("Checking whether you are on the guestlist...")
 
     val guestList = listOf("Maria", "Blub")
@@ -10,7 +16,7 @@ fun main() {
 
     var isInvited: Boolean = false
     for (guest in guestList) {
-        if (guest == hi) {
+        if (guest == name) {
             isInvited = true
         }
     }
@@ -22,10 +28,7 @@ fun main() {
 
     println("Welcome")
 
-    println("How old are you?")
 
-    val potentialAge = readln()
-    val age = getAge(potentialAge)
 
     println("You are " + age + " old.") //println("You are $age old.")
     if (age < 18) {
