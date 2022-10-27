@@ -3,10 +3,9 @@ fun main() {
     val name: String = readln()
     println("Hello $name!")
     println("How old are you?")
-    val potentialAge = readln()
-    val age = getAge(potentialAge)
+    val potentialAge: String = readln()
+    val age: Int = potentialAge.toInt()
     println("Which gender do you identify as?")
-    val gender: String = readln()
 
     println("Checking whether you are on the guestlist...")
 
@@ -37,14 +36,4 @@ fun main() {
     }
 
     println("Passed!")
-}
-
-private fun getAge(potentialAge: String): Int {
-    while (true) {
-        try {
-            return potentialAge.toInt()
-        } catch (e: NumberFormatException) {
-            println("$potentialAge is no number. Try again with a valid number!")
-        }
-    }
 }
