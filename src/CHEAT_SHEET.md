@@ -14,6 +14,7 @@ fun main() {
 Um Text auf der Kommandozeile auszugeben, kann die 'println()' Funktion verwendet werden.
 ```kotlin
 println("Hier tollen Text einfügen :)")
+//prints 'Hier tollen Text einfügen :)'
 ```
 
 ## Variablen
@@ -38,7 +39,7 @@ Kotlin kann den Typen einer Variable auch aus ihrem zugewiesenen Wert ermitteln 
 val a = "someString"
 //ACHTUNG: Die Variable ist immernoch vom Typ String! 
 ```
-
+\newpage
 ## String Templates
 Kotlin unterstützt sogenannte 'String Interpolation'. Dabei können Variablen in einen neuen String eingesetzt werden.
 
@@ -74,25 +75,27 @@ Optional kann mit 'else' ein zweiter Block angegeben werden, der ausgeführt wir
 ```kotlin
 val a: Boolean = true
 if (a) {
-    println('Condition was true')
+    println("Condition was true")
 }
 //prints 'Condition was true'
 
 val b: Int = 10
 if (b > 5) {
-    println('Condition was true')
+    println("Condition was true")
 }
 //prints 'Condition was true'
-
+```
+\newpage
+```kotlin
 val c: Boolean = false
 if (!c) {
-    println('Condition was true')
+    println("Condition was true")
 }
 //prints 'Condition was true'
 
 val d: String = "someStringValue"
 if (d != "someOtherValue") {
-    println('Condition was true')
+    println("Condition was true")
 }
 //prints 'Condition was true'
 ```
@@ -120,6 +123,7 @@ for (x: String in a) {
 }
 // prints every element of list a
 ```
+\newpage
 ## Funktionen
 Funktionen sind Codeblöcke, die wiederverwendet werden können. Meistens nehmen sie sogenannte Parameter entgegen und liefern ein Ergebnis zurück.
 
